@@ -2,6 +2,8 @@ from typing import Any, Dict, List
 import streamlit as st
 from backend.core import run_llm
 
+# Run with: streamlit run main.py
+
 def _format_sources(context_docs: List[Any]) -> List[str]:
     return [
         str((meta.get("source") or "Unknown"))
